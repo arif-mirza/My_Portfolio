@@ -1,0 +1,180 @@
+#section-title-03 {
+  font-size: 3.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, rgba(255,255,255,0.1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+#section-title-04 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-73px);
+}
+
+#section-title-04:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height:3px;
+  right: 2;
+  margin-left:11%;
+  bottom: 0;
+  background-color: #4cc9f0;
+  border: none; /* If you use <hr>, this removes the default border */
+  
+  animation: glow 1.5s infinite alternate;
+  box-shadow: 0 0 30px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0; 
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  }
+  50% {
+    box-shadow: 0 0 20px #4cc9f0, 0 0 40px #4cc9f0, 0 0 60px #4cc9f0;
+  }
+  100% {
+    box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  }
+}
+
+.skill-info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-name{
+  background: linear-gradient(to top, transparent 0%, #fff 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.skill-line{
+    width: 30%;
+    height: 2px; /* Adjust the height as needed */
+    /* margin: 0 auto; Center the line */
+    border: none;
+    background-color: #4cc9f0;
+    box-shadow: 0 0 40px #4cc9f0, 0 0 90px #4cc9f0, 0 0 90px #4cc9f0, 0 0 90px #4cc9f0;
+    animation: glow 1.5s infinite alternate;
+  }
+
+  .skill-btns{
+    border-left: 1px solid #3f3d3d;
+    min-width: 200px;
+    text-align: start !important;
+  }
+  .skill-btns .skill-btn{
+    padding: 7px 25px;
+    background-color: none;
+    border: none;
+    outline: none;
+    background: black;
+    color: #fff;
+    font-size: 15px;
+    width: 150px;
+    align-items: start !important;
+  
+  }
+  .skill-btns .skill-btn.active{
+    border-left: 3px solid #4cc9f0;
+    transition: 0.3s ease;
+  }
+  .skill-btns .skill-btn:hover{
+    background-color: #313d4c;
+
+  }
+  .span-link{
+    color: #4cc9f0;
+    transition: 0.3s ease;
+    font-weight: 900;
+  }
+  .tab-date{
+    color: #696868;
+    font-size: 13px;
+  }
+  .tabs-info{
+    /* border: 1px solid #fff; */
+    width: 90%;
+  }
+  .tab-list {
+    /* list-style: none; */
+  }
+  .tab-lis::marker{
+    color: #4cc9f0;
+  }
+  .tab-list li::marker{
+    position: relative;
+    /* margin-bottom: 40px; */
+    color: #4cc9f0; 
+    
+    font-size: 30px;
+    text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+
+
+  }
+  .tab-list l::before{
+    content: '•';
+    position: absolute;
+    left: -30px;
+    top: -38%;
+    /* top: -15px; */
+    font-size: 40px;
+    color: #4cc9f0;
+    text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+    transition: 0.3s ease;
+    /* transform: translateX(-40px); */
+  }
+
+  .tab-list-02{
+    /* list-style: none; */
+  }
+  .tab-list-02 li::marker{
+    position: relative;
+    
+    color: #4cc9f0; 
+    font-size: 30px;
+
+  }
+  .tab-list-02 l::before{
+    content: '•';
+    position: relative;
+    left: -30px;
+    top: -78%;
+    /* top: -15px; */
+    font-size: 40px;
+    color: #4cc9f0;
+    text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+    transition: 0.3s ease;
+    /* transform: translateX(-40px); */
+  }
+  .star{
+    color: #4cc9f0;
+  
+  }
+
+  @media screen and (max-width: 570px) {
+    .tabs-info{
+      width: 80%;
+      font-size: 15px;
+    }
+    .skill-btns{
+      /* background-color: #4cc9f0; */
+      display: flex;
+      overflow: scroll;
+      gap: 10px;
+      margin-bottom: 50px;
+    }
+    .tabs-info{
+      font-size: 13px;
+      width: 90%;
+      margin-left: 10px !important;
+      margin-top: 10px;
+    }
+    #section-title-04:before{
+      margin-left:35%;
+    }
+
+  }

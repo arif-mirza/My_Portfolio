@@ -1,0 +1,75 @@
+/* Loader.css */
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #0f1929; 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-circle
+{
+  border: 5px solid #4cc9f0;
+  padding: 40px;
+  border-radius: 50%;
+}
+.loader-circle h1{
+  color: #4cc9f0;
+} */
+
+
+
+
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  /* border: 15px solid #ddd; */
+  border-radius: 50%;
+  position: relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  /* box-shadow: 0 0 10px #4cc9f0, 0 0 10px #4cc9f0, 0 0 90px #4cc9f0;  */
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  border: 5px solid #4cc9f0;
+  animation: l18 3s 1 linear;
+  text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  box-shadow: 0 0 60px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0; 
+}
+@keyframes l18 {
+    0%   {clip-path:polygon(50% 50%,0 0,0    0,0    0   ,0    0   ,0    0   )}
+    0%  {box-shadow: none;}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0   ,100% 0   ,100% 0   )}
+    25%  {box-shadow: none;}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    50%  {box-shadow: none;}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    100%)}
+    75%  {box-shadow: none;}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0    100%,0    0   )}
+    100% {box-shadow:none}
+   
+}

@@ -1,0 +1,44 @@
+.glow-button {
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid #4cc9f0 !important;
+  color: #fff; /* White text */
+  font-weight: 800;
+  padding: 18px 28px;
+  font-size: 1em;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  overflow: hidden; /* Ensure no overflow from :before element */
+  z-index: 1; /* Ensure the button's text is on top */
+}
+
+.glow-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4cc9f0;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  transition: clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path 0.5s cubic-bezier(.165, 0.84, 0.44, 1);
+  z-index: -1; /* Keep the background behind the text */
+}
+
+.glow-button:hover:before {
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 30px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0;
+  color: #000 !important; /* Change text color to black on hover */
+}
+
+.glow-button:hover:after {
+  animation: opacityFallbackIn 0s step-start forwards;
+}
+

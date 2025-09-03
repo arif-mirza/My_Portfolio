@@ -1,0 +1,56 @@
+#section-title-07 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(to top, transparent 0%, rgba(255,255,255,0.1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+#section-title-08 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-73px);
+}
+
+#section-title-08:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height:3px;
+  right: 2;
+  margin-left:13%;
+  bottom: 0;
+  background-color: #4cc9f0;
+  border: none; /* If you use <hr>, this removes the default border */
+  
+  animation: glow 1.5s infinite alternate;
+  box-shadow: 0 0 30px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0; 
+}
+
+.contact-info{
+  margin-top: -60px;
+  margin-bottom: 90px;
+}
+
+.contact-info p {
+font-size: 16px;
+color: #9fa2ab;
+  
+}
+
+@media screen and (max-width: 570px) {
+  .contact-info{
+    
+    width: 90% !important;
+    font-size: 12px;
+  }
+  .contact-info p{
+    font-size: 14px;
+  }
+  #section-title-07{
+    margin-bottom: -5px;
+    font-size: 74px;
+  }
+}

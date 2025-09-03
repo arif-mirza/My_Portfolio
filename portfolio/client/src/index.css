@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500&display=swap');
+
+
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  
+}
+
+:root {
+  /*=======Main theme colors=======*/
+  --text-color: #fff;
+  --second-color: #6a59d1; 
+  --third-color: #777;
+  --contrase1 : #4cc9f0;
+  /*=======Hover colors=======*/
+  --hover-color: #614fd0;
+  /*=======Background colors=======*/
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparent-color: rgba(0, 0, 0, 0.1);
+  --transparent-color-01: rgba(0, 0, 0, 0.1);
+  --transparent-color-02: rgba(0, 0, 0, 0.1);
+  --line-color: #d7d7d7;
+  --hover-effect-color: rgb(16, 15, 15);
+  /*=======Color Filter=======*/
+  --color-filter: invert(1);
+  /*=======Box shadow=======*/
+  --box-shadow: 0px 0px 20px rgba(0 0 0 / 10%);
+  /*=======Font size=======*/
+  --small-font-size: 0.9em;
+  --normal-font-size: 1em;
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c5cadf;
+  --scroll-thumb-color: #70768a;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+
+
+.dark-theme {
+  /*=======Main theme colors=======*/
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #a9afc3;
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(225, 225, 225, 0.1);
+  --transparent-color-01: rgba(225, 225, 225, 0.1);
+  --line-color: #454f6b;
+  --hover-effect-color: #fff;
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #clce;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
+/* body {
+  /* color: var(--first-color); */
+  /* background: var(--body-bg-color); */
+  /* margin: 2rem 0 0 0; */
+  /* transition: .5s ease; */
+/* }  */
+
+body {
+  background: linear-gradient(to right, #000000, #001219);
+  /* background-color: var(--first-color); */
+  color: #fff;
+}
+
+.hover-link-effect{
+  text-decoration: none;
+ 
+  /* font-weight: bold; */
+  position: relative;
+  /* background-color: aqua; */
+  color: #4cc9f0;
+  text-shadow: 
+      0 0 5px #4cc9f0, 
+      0 0 10px #4cc9f0, 
+      0 0 20px #4cc9f0, 
+      0 0 40px #4cc9f0, 
+      0 0 80px #4cc9f0;
+}
+.hover-link-effect::after{
+  content: "";
+  position: absolute;
+  /* display: block; */
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -3px;
+  transition: 0.3s;
+  background: radial-gradient(circle, #4cc9f0 0%, #4cc9f0 30%, #4cc9f0 100%);
+
+
+
+  transition: all 0.3s ease;
+  /* margin-top: 5px; */
+  /* margin-left: 5px; */
+  
+}
+.hover-link-effect:hover::after{
+  width: 100%;
+  /* text-shadow: 0 0 30px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0;  */
+}

@@ -1,0 +1,235 @@
+#section-title-01 {
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(255, 255, 255, 0.1) 70%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#section-title-02 {
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-73px);
+}
+
+#section-title-02:before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 5px;
+  right: 2;
+  margin-left: 12%;
+  bottom: 0;
+  background-color: #4cc9f0;
+  border: none; /* If you use <hr>, this removes the default border */
+
+  animation: glow 1.5s infinite alternate;
+  box-shadow: 0 0 30px #4cc9f0, 0 0 60px #4cc9f0, 0 0 90px #4cc9f0;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  }
+  50% {
+    box-shadow: 0 0 20px #4cc9f0, 0 0 40px #4cc9f0, 0 0 60px #4cc9f0;
+  }
+  100% {
+    box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  }
+}
+
+.about-name {
+  background: linear-gradient(to top, transparent 0%, #fff 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-sec {
+  border: 2px solid #4cc9f0;
+  border-radius: 10%;
+  padding: 0px;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-sec img {
+  width: 250px;
+  height: 350px;
+  margin-top: -10px;
+}
+.img-sec:hover {
+  animation: glowing 1.5s infinite alternate;
+  box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 5px #4cc9f0;
+  }
+  50% {
+    box-shadow: 0 0 20px #4cc9f0, 0 0 30px #4cc9f0, 0 0 40px #4cc9f0;
+  }
+  100% {
+    box-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+  }
+}
+
+.img-sec img {
+  width: 350px;
+  height: 350px;
+}
+
+.info {
+  /* border: 1px solid #fff; */
+  width: 90%;
+}
+
+.professional-list {
+  display: flex;
+  column-gap: 90px;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.professional-list .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+  margin-bottom: 20px;
+}
+
+.professional-list .list-item h3 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.professional-list .list-item h3 span {
+  color: #fff;
+  font-size: 18px;
+}
+.list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.new-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tect-list {
+  gap: 30px;
+  /* margin: 20px 10px; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-wrap: nowrap; */
+  /* flex-direction: column; */
+  align-items: center;
+}
+.tect-list li img {
+  width: 25px;
+  /* margin-right: 10px; */
+}
+.tect-list li .info {
+  font-size: 13px;
+}
+
+.end-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+#about-social-Icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  /* margin-top: -20px; */
+  padding-right: 20px;
+}
+#about-social-Icons a i {
+  font-size: 26px;
+  color: #4cc9f0;
+}
+#about-social-Icons a i:hover {
+  transform: scale(1.3);
+  transition: 0.4s ease;
+  text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 30px #4cc9f0;
+}
+
+@media screen and (max-width: 570px) {
+  .img-sec {
+    margin-bottom: 10px;
+    margin: 10px auto;
+  }
+  .btn-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .tech-main-sec {
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tect-list li img {
+    width: 49px;
+  }
+  .img-sec {
+    border: 1px solid #fff;
+    margin-bottom: 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-sec img {
+    width: 350px;
+    height: 350px;
+    /* margin-bottom: 30px; */
+    margin-right: 20px;
+  }
+  #section-title-01 {
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+  }
+  .sec-about {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .info {
+    font-size: 14px !important;
+  }
+  .list-sec .professional-list li {
+    display: flex !important;
+    flex-direction: column !important;
+    /* gap: 5px; */
+    margin-bottom: 10px;
+  }
+}
