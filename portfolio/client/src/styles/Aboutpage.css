@@ -67,8 +67,7 @@
   align-items: center;
 }
 .img-sec img {
-  width: 250px;
-  height: 350px;
+  object-fit:contain;
   margin-top: -10px;
 }
 .img-sec:hover {

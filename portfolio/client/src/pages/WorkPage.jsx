@@ -37,7 +37,7 @@ function WorkPage() {
         tech={myWork.tech}
         img={myWork.img}
         link={myWork.link}
-        live = {myWork.live}
+        live={myWork.live}
       />
     );
   }

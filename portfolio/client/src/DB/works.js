@@ -1,14 +1,22 @@
-import work1 from "../assets/images/work-1.png";
-import work2 from "../assets/images/work-2.JPEG";
-import work3 from "../assets/images/work-3.png";
 import work4 from "../assets/images/work-4.png";
 import work5 from "../assets/images/work-5.png";
 import work6 from "../assets/images/work-6.png";
 import work7 from "../assets/images/work-07.jpg";
 import work8 from "../assets/images/work-8.png";
 import work9 from "../assets/images/work-9.png";
+import work10 from "../assets/images/work10.png";
 
 const myWorks = [
+  {
+    id: 7,
+    title: "Full Stack Resume Analyzer with AI Integration",
+    description:
+      "Developed a full-stack Resume Analyzer web application that leverages AI to evaluate and score resumes based on job descriptions. Implemented features for users to upload resumes, receive instant feedback, and improve their applications using advanced AI algorithms.",
+    tech: "HTML5, Tailwind CSS, React-JS, Context-API, Express.js, AOS, ReadPDF, OpenAI, Mongodb, Authentication ",
+    img: work10,
+    link: "https://github.com/arif-mirza/Resumex_Frontend",
+    live: "https://mjresumex.vercel.app/",
+  },
   {
     id: 6,
     title: "Full Stack Classroom Notes web application",
@@ -17,7 +25,7 @@ const myWorks = [
     tech: "HTML5, CSS3, Material UI, React-JS, Context-API, YUP , AOS, Redux-Toolkit, Firebase, Authentication ",
     img: work9,
     link: "https://github.com/arif-mirza/Hackathons",
-    live : "https://nexxavibe.web.app/"
+    live: "https://nexxavibe.web.app/",
   },
   {
     id: 5,
@@ -27,7 +35,7 @@ const myWorks = [
     tech: "HTML5 CSS3 Bootstrap5 React-JS Context-API, YUP , AOS, Redux-Toolkit, Firebase",
     img: work8,
     link: "https://github.com/arif-mirza/WMD-B7-2024/tree/main/Assignment-14/social-media-app",
-    live : "https://mjcollection.netlify.app/"
+    live: "https://mjcollection.netlify.app/",
   },
   {
     id: 1,
@@ -37,7 +45,7 @@ const myWorks = [
     tech: "HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python",
     img: work5,
     link: "https://github.com/arif-mirza/Javascript-Projects",
-    live : "https://mj-imagesearcheng.surge.sh/", 
+    live: "https://mj-imagesearcheng.surge.sh/",
   },
   {
     id: 2,
@@ -47,7 +55,7 @@ const myWorks = [
     tech: "React, JavaScript, API integration, HTML5, CSS3, Responsive Design",
     img: work7,
     link: "https://github.com/arif-mirza/Javascript-Projects/tree/main/Project%2011/Currency%20rate%20converter",
-    live : "https://mj-currency-converter.surge.sh/",
+    live: "https://mj-currency-converter.surge.sh/",
   },
   {
     id: 3,
@@ -57,18 +65,18 @@ const myWorks = [
     tech: "React, API integration, JavaScript, HTML5, CSS3, Responsive Design",
     img: work4,
     link: "https://github.com/arif-mirza/Javascript-Projects/tree/main/project%204/crypto-rate%20website",
-    live : ""
+    live: "",
   },
-  {
-    id: 4,
-    title: "Weather Application",
-    description:
-      "This project create images by using prompt.In this project we use openAI for create images",
-    tech: "HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python",
-    img: work6,
-    link: "https://github.com/arif-mirza/Javascript-Projects/tree/main/Project%2018/wetherApp",
-    live : "https://mjweatherapp.surge.sh/"
-  },
+  // {
+  //   id: 4,
+  //   title: "Weather Application",
+  //   description:
+  //     "This project create images by using prompt.In this project we use openAI for create images",
+  //   tech: "HTML5 CSS3 Bootstrap5 React-JS Context-API Generative AI, Langchain, Python",
+  //   img: work6,
+  //   link: "https://github.com/arif-mirza/Javascript-Projects/tree/main/Project%2018/wetherApp",
+  //   live : "https://mjweatherapp.surge.sh/"
+  // },
 ];
 
 export default myWorks;

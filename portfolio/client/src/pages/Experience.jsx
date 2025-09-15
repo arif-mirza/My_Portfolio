@@ -1,30 +1,28 @@
-import React from "react";
-import { useState , useEffect} from "react";
+import { useState, useEffect } from "react";
 import "../styles/Experience.css";
-import Smit from "../components/Smit";
-import Lablab from "../components/Lablab";
-import Accountant from "../components/Accountant";
+// import Smit from "../components/Smit";
+// import Lablab from "../components/Lablab";
+// import Accountant from "../components/Accountant";
 import SkillBtn from "../components/SkillBtn";
 import ExperienceData from "../DB/experienceData";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Experience() {
   const [activeComponent, setActiveComponent] = useState("one");
-
 
   useEffect(() => {
     // Initialize AOS
     AOS.init({
-      duration: 500,  // Animation duration in milliseconds
-      once: false,     // Allow animation to happen multiple times
+      duration: 500, // Animation duration in milliseconds
+      once: false, // Allow animation to happen multiple times
     });
-  
+
     // Reset animations on scroll
-    window.addEventListener('scroll', AOS.refresh);
-  
+    window.addEventListener("scroll", AOS.refresh);
+
     // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', AOS.refresh);
+      window.removeEventListener("scroll", AOS.refresh);
     };
   }, []);
 
@@ -34,8 +32,12 @@ function Experience() {
         <div className="container py-5">
           <div className="row text-center">
             <div className="col-12">
-              <h1 id="section-title-03" data-aos='fade-right' >Experience</h1>
-              <h1 id="section-title-04" data-aos='fade-left'>Experience</h1>
+              <h1 id="section-title-03" data-aos="fade-right">
+                Experience
+              </h1>
+              <h1 id="section-title-04" data-aos="fade-left">
+                Experience
+              </h1>
             </div>
           </div>
         </div>
