@@ -1,12 +1,24 @@
 import work4 from "../assets/images/work-4.png";
 import work5 from "../assets/images/work-5.png";
-import work6 from "../assets/images/work-6.png";
+// import work6 from "../assets/images/work-6.png";
 import work7 from "../assets/images/work-07.jpg";
 import work8 from "../assets/images/work-8.png";
 import work9 from "../assets/images/work-9.png";
 import work10 from "../assets/images/work10.png";
+import work11 from "../assets/images/work-11.png";
+import work12 from "../assets/images/work12.png"
 
 const myWorks = [
+  {
+  id: 8,
+  title: "ApplyMate: AI-Powered Auto Job Applicator",
+  description:
+    "Engineered a sophisticated Chrome extension that automates the job application process across LinkedIn and other major platforms. Built with advanced DOM manipulation techniques to interact with complex web structures and integrated AI algorithms to intelligently match user profiles with job requirements, significantly reducing application time.",
+  tech: "JavaScript (ES6+), Chrome Extension API, DOM Manipulation, AI Integration, CSS3/Tailwind, Node.js, Web Scraping",
+  img: work12, 
+  link: "https://github.com/arif-mirza/ApplyMate", 
+  live: "https://chromewebstore.google.com/category/extensions?utm_source=ext_sidebar&hl=en-US", 
+},
   {
     id: 7,
     title: "Full Stack Resume Analyzer with AI Integration",
@@ -16,6 +28,16 @@ const myWorks = [
     img: work10,
     link: "https://github.com/arif-mirza/Resumex_Frontend",
     live: "https://mjresumex.vercel.app/",
+  },
+  {
+    id: 8,
+    title: `NexaVibe Full Stack Social Media web application`,
+    description:
+      "Developed a full-stack social media web application enabling users to create profiles, share posts, and connect with others. Implemented features such as real-time updates, user authentication, and interactive UI for an engaging user experience.",
+    tech: "HTML5, Tailwind CSS, React-JS, Context-API, Express.js, AOS,JWT, OpenAI, Mongodb, Authentication ",
+    img: work11,
+    link: "https://github.com/arif-mirza/",
+    live: "https://nexxavibe.netlify.app/",
   },
   {
     id: 6,

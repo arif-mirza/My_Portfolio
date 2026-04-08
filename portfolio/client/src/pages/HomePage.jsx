@@ -50,14 +50,15 @@ function HomePage() {
                   <a href="https://github.com/arif-mirza">
                     <i className="fa-brands fab fab fa-github"></i>
                   </a>
-                  <a href="https://www.facebook.com/profile.php?id=100093423030695">
+                  {/* <a href="https://www.facebook.com/profile.php?id=100093423030695"> */}
+                  <a href="https://www.facebook.com/profile.php?id=61585366285890">
                     <i className="fab fa-facebook"></i>
                   </a>
-                  <a href="https://www.instagram.com/">
+                  {/* <a href="https://www.instagram.com/">
                     <i className="fab fa-instagram"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
+                  </a> */}
+                  <a href="https://leetcode.com/u/mirzaarif/">
+                    <i class="fa-brands fa-leetcode"></i>
                   </a>
                 </div>
                 <div
@@ -66,17 +67,19 @@ function HomePage() {
                   data-aos="fade-up"
                   data-aos-delay="300"
                 >
-                  <h5 style={{ color: "#9fa2ab" }}>Hi, I am</h5>
+                  <h5 style={{ color: "#9fa2ab" }}>Hi, my name is</h5>
                   <h1 id="name">Muhammad Arif Mirza</h1>
                   <p className="fw-bold typing-effect">
                     I'm a{" "}
                     <span id="typing-effect">
                       <TypingEffect
                         strings={[
-                          "Software Engineer",
+                          "CS Student",
                           "MERN stack Developer",
-                          "React Native Developer",
                           "Data structure Problem Solver",
+                          "Team Player",
+                          "Backend Developer",
+                          "Frontend Developer",
                         ]}
                         typeSpeed={20}
                         backSpeed={15}
@@ -86,9 +89,10 @@ function HomePage() {
                     </span>
                   </p>
                   <p style={{ color: "#9fa2ab" }}>
-                    As a full-stack developer, I create robust web applications,
-                    leveraging my expertise in both frontend and backend
-                    technologies. Passionate about innovative solutions.
+                    I'm a Computer Science student and passionate full-stack
+                    developer specializing in the MERN stack. I love building
+                    modern, responsive web applications and exploring innovative
+                    technologies that solve real-world problems.
                   </p>
                   <a
                     href={`mailto:${email}?subject=${encodeURIComponent(

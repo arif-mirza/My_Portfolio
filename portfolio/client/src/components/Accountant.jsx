@@ -1,31 +1,42 @@
-import React from 'react'
+
 import "../styles/Experience.css"
 function Accountant() {
   return (
     <>
-     <div className="tabs-info ms-5">
-              <h5 className='skill-name fw-bold'>Accountant At Islamiya Groups <a href=""><span className='span-link'>@Islamia Groups</span></a></h5>
-              <p className='tab-date'>Jan 2023 - Nov 2023</p>
-              <div className="list-info">
-                <ul className='tab-list' style={{color: "#9fa2ab" }}>
-                  <li><span className='fw-bold'>Financial Reporting and Analysis:</span>
-                  Managed and prepared accurate financial statements, ensuring compliance with accounting standards and providing valuable insights for business decision-making.
-                  
-                  </li>
-                  <li><span className='fw-bold'>Budget Management and Forecasting: </span>
-                  Developed and monitored budgets, conducted variance analysis, and provided forecasts to support strategic planning and cost control.
-                  </li>
-                  <li> <span className='fw-bold'>Tax Compliance and Audit Preparation: </span>
-                  Ensured timely tax filings, maintained thorough documentation for audits, and collaborated with external auditors to ensure smooth audit processes.</li>
-                  
-                </ul>
-              </div>
+      <div className="tabs-info ms-5">
+        <h5 className='skill-name fw-bold'>
+          Programming Student & Community Member
+          <a href="https://icode.guru/">
+            <span className='span-link'>@iCodeGuru</span>
+          </a>
+        </h5>
 
-              
-            </div>
+        <p className='tab-date'>2024 - Present</p>
 
-    
-    
+        <div className="list-info">
+          <ul className='tab-list' style={{ color: "#9fa2ab" }}>
+
+            <li>
+              <span className='fw-bold'>Collaborative Learning:</span>
+              Participating in international programming community where I collaborate with global students and developers to improve problem-solving and coding skills.
+            </li>
+
+            <li>
+              <span className='fw-bold'>Programming Practice and Challenges:</span>
+              Regularly practicing coding problems, algorithms, and logical challenges to strengthen programming fundamentals and analytical thinking.
+            </li>
+
+            <li>
+              <span className='fw-bold'>Team-Based Learning Environment:</span>
+              Working with international teams, sharing knowledge, discussing solutions, and learning modern programming approaches through community sessions.
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+
+
     </>
   )
 }

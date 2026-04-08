@@ -1,5 +1,5 @@
-import react from "react";
-import { useState, useEffect } from "react";
+
+import { useEffect } from "react";
 import "../styles/AboutPage.css";
 import aboutimg from "../assets/images/about-img.png";
 import Button from "../components/Button";
@@ -19,7 +19,7 @@ import mongodb from "../assets/icons/mongodb.png";
 import git from "../assets/icons/git.png";
 import restApi from "../assets/icons/restapi.png";
 import javascript from "../assets/icons/javascript.png";
-import CV from "../assets/images/Muhammad Arif Official(M).pdf";
+import CV from "../DB/Muhammad_Arif _Resume.pdf";
 import redux from "../assets/icons/redux.png";
 import yup from "../assets/icons/yup.png";
 import AOS from "aos";
@@ -53,18 +53,19 @@ function AboutPage(props) {
     const counters = document.querySelectorAll(".counter");
     counters.forEach((counter) => {
       //  console.log(counter);
-      counter.innerHTML = 0;
-      const updateCounter = () => {
-        const startingCount = Number(counter.innerHTML);
+      counter.innerText = 0;
+            const updateCounter = () => {
+        const startingCount = Number(counter.innerText);
+        const targetCount = Number(counter.getAttribute("data-target"));
+        const increment = Math.max(1, Math.ceil(targetCount / 100));
 
-        const targetCount = +counter.getAttribute("data-target");
-
-        const incr = targetCount / 100;
         if (startingCount < targetCount) {
-          counter.innerHTML = `${startingCount + incr}`;
+          const nextCount = Math.min(startingCount + increment, targetCount);
+          counter.innerText = `${nextCount}`;
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = `${targetCount}`;
         }
-        // console.log(targetCount);
-        setTimeout(updateCounter, 10);
       };
 
       updateCounter();
@@ -178,7 +179,7 @@ function AboutPage(props) {
                     </li>
 
                     <li className="list-item">
-                      <h3 className="counter" data-target="50"></h3>
+                      <h3 className="counter" data-target="10"></h3>
                       <span>
                         Happy
                         <br /> Clients
@@ -186,7 +187,7 @@ function AboutPage(props) {
                     </li>
 
                     <li className="list-item">
-                      <h3 className="counter" data-target="100"></h3>
+                      <h3 className="counter" data-target="20"></h3>
                       <span>
                         Success
                         <br /> Projects
@@ -368,3 +369,4 @@ function AboutPage(props) {
 }
 
 export default AboutPage;
+

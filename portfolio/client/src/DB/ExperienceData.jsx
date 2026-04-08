@@ -1,32 +1,26 @@
-import Smit from "../components/Smit"
-import Lablab from "../components/Lablab"
-import Accountant from "../components/Accountant"
-import BackendManager from "../components/BackendManager"
-
+import Smit from "../components/Smit";
+// import Lablab from "../components/Lablab"
+import Accountant from "../components/Accountant";
+import BackendManager from "../components/BackendManager";
 
 const ExperienceData = [
-  {
-    id: 'one',
-    label: 'SMIT',
-    component: <Smit />
-  },
-  {
-    id: 'two',
-    label: 'Lablab.ai',
-    component: <Lablab />
-  },
-  {
-    id: 'three',
-    label: 'Accounts',
-    component: <Accountant />
-  },
-  {
-    id: 'four',
-    label: 'Backend Manager',
-    component: <BackendManager />
-  }
 
-  
-]
+  {
+    id: "Three",
+    label: "Software Developer Intern",
+    component: <BackendManager />,
+  },
+  {
+    id: "Two",
+    label: "ICodeGuru",
+    component: <Accountant />,
+  },
 
-export default ExperienceData
+  {
+    id: "one",
+    label: "SMIT",
+    component: <Smit />,
+  },
+];
+
+export default ExperienceData;
