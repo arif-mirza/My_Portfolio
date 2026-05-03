@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/Navbar.css";
 import logo from "../assets/images/nav-logo.png";
 
-
-
-// function Navbar() {
-
-  window.addEventListener("scroll", function(){
-    const header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-})
-
-
-
-
 function Navbar() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector("header");
+      if (header) {
+        header.classList.toggle("sticky", window.scrollY > 0);
+      }
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
 <header id="header">

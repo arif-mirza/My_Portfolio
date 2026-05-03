@@ -54,7 +54,7 @@ function AboutPage(props) {
     counters.forEach((counter) => {
       //  console.log(counter);
       counter.innerText = 0;
-            const updateCounter = () => {
+      const updateCounter = () => {
         const startingCount = Number(counter.innerText);
         const targetCount = Number(counter.getAttribute("data-target"));
         const increment = Math.max(1, Math.ceil(targetCount / 100));

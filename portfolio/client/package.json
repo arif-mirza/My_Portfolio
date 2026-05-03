@@ -14,13 +14,18 @@
     "@fortawesome/free-brands-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.2.0",
     "aos": "^2.3.4",
+    "axios": "^1.15.2",
     "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
     "framer-motion": "^11.11.8",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-loading-skeleton": "^3.5.0",
     "react-router-dom": "^6.26.1",
     "swiper": "^11.1.12",
+    "tailwind-merge": "^3.5.0",
     "typed.js": "^2.1.0"
   },
   "devDependencies": {

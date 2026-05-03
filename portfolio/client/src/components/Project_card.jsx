@@ -4,7 +4,7 @@ import "../styles/Project_card.css";
 function Project_card(props) {
   return (
     <>
-      <div className="card">
+      <div className="card" data-aos="fade-up">
         <div className="social">
           <a href={props.live} target="_blank" rel="noopener noreferrer">
             <i class="fa-regular fa-folder-closed"></i>

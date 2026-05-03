@@ -1,0 +1,118 @@
+// This is your Prisma schema file
+// Learn more: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─────────────────────────────────────────────────
+// ENUMS
+// ─────────────────────────────────────────────────
+
+enum Role {
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum ProjectType {
+  FEATURED
+  OTHER
+}
+
+// ─────────────────────────────────────────────────
+// USER (Admin only)
+// ─────────────────────────────────────────────────
+
+model User {
+  id        String   @id @default(cuid())
+  name      String
+  email     String   @unique
+  password  String
+  role      Role     @default(ADMIN)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+// ─────────────────────────────────────────────────
+// PROJECT (Featured works with image)
+// ─────────────────────────────────────────────────
+
+model Project {
+  id              String      @id @default(cuid())
+  title           String
+  description     String      @db.Text
+  tech            String
+  githubUrl       String?
+  liveUrl         String?
+  imageUrl        String?
+  imagePublicId   String?
+  featured        Boolean     @default(false)
+  type            ProjectType @default(FEATURED)
+  order           Int         @default(0)
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  @@map("projects")
+}
+
+// ─────────────────────────────────────────────────
+// WORK  (Project cards — smaller projects)
+// ─────────────────────────────────────────────────
+
+model Work {
+  id              String   @id @default(cuid())
+  title           String
+  info            String   @db.Text
+  tech            String
+  githubUrl       String?
+  liveUrl         String?
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("works")
+}
+
+// ─────────────────────────────────────────────────
+// MESSAGE (Contact form submissions)
+// ─────────────────────────────────────────────────
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String?
+  body      String   @db.Text
+  isRead    Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@map("messages")
+}
+
+// ─────────────────────────────────────────────────
+// EXPERIENCE (Where I've Worked)
+// ─────────────────────────────────────────────────
+
+model Experience {
+  id              String   @id @default(cuid())
+  label           String
+  title           String
+  companyName     String
+  companyUrl      String?
+  duration        String
+  description     String   @db.Text
+  imageUrl        String?
+  imagePublicId   String?
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+
+  @@map("experiences")
+}

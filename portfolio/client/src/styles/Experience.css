@@ -65,6 +65,8 @@
     border-left: 1px solid #3f3d3d;
     min-width: 200px;
     text-align: start !important;
+    display: flex;
+    flex-direction: column;
   }
   .skill-btns .skill-btn{
     padding: 7px 25px;
